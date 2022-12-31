@@ -33,9 +33,11 @@ import { ref,  onMounted } from 'vue'
 </script>
 
 <style scoped>
+#draw {
+  border: 2px dashed green;
+}
+
 @media (min-width: 1024px) {
-  #draw {
-    border: 2px dashed green;
-  }
+
 }
 </style>

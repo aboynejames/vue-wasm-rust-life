@@ -9,30 +9,16 @@
         <RouterLink to="/draw">Draw</RouterLink>
       </nav>
     </header>
-    <HelloWorld msg="Peer to Peer Data Science" />
-    <RouterView />
+    <router-view/>
   </div>
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView} from 'vue-router'
 </script>
 
 
 <style scoped>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 0px solid purple;
-  height: inherit;
-}
-
 header {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -94,9 +80,9 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
 }
+
 </style>
